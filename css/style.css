@@ -531,3 +531,30 @@
 
 /* copytight */
 /* footer-section */
+.to-top {
+  position: fixed;
+  bottom: 33%;
+  right: 30px;
+  color: #fefefe;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+  background-color: #ffc61a;
+  -webkit-box-shadow: 0 0 15px #fefefe;
+          box-shadow: 0 0 15px #fefefe;
+  text-transform: uppercase; }
+  .to-top h1 {
+    font-size: 80px;
+    line-height: 0.3; }
+  .to-top h2 {
+    font-size: 20px; }
+  .to-top:hover {
+    color: #fefefe;
+    text-decoration: none;
+    -webkit-box-shadow: 0 0 18px #ffc61a;
+            box-shadow: 0 0 18px #ffc61a; }
+  .to-top.show {
+    display: block; }
+  .to-top.hide {
+    display: none; }

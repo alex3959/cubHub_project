@@ -491,10 +491,31 @@
 /* copytight */
 /* footer-section */
 
-
-
-
-
+.to-top
+    position: fixed
+    bottom: 33%
+    right: 30px
+    color: $mainColorWhite
+    cursor: pointer
+    text-align: center
+    text-decoration: none
+    border-radius: 50%
+    background-color: $mainColorYellow
+    box-shadow: 0 0 15px $mainColorWhite
+    text-transform: uppercase
+    & h1
+        font-size: 80px
+        line-height: 0.3
+    & h2
+        font-size: 20px
+    &:hover
+        color: $mainColorWhite
+        text-decoration: none
+        box-shadow: 0 0 18px #{$mainColorYellow}
+    &.show
+        display: block
+    &.hide
+        display: none
 
 
 
