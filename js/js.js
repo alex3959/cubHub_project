@@ -17,8 +17,17 @@ headerSection.addEventListener('mouseleave', function () {
 })
 
 headerSection.addEventListener('mouseover', function () {
-  if(buttonTop.classList.contains('show')){
+  if (buttonTop.classList.contains('show')) {
     buttonTop.classList.remove('show');
     buttonTop.classList.add('hide');
+  }
+})
+
+var menuExit = document.querySelector('.menu-exit')
+var collapse = document.querySelector('.collapse')
+
+menuExit.addEventListener('click', function () {
+  if (collapse.classList.contains('show')) {
+    collapse.classList.remove('show');
   }
 })

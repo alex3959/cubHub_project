@@ -14,12 +14,15 @@
 .menu-wrap
     .navbar
         padding-top: 41px
-        padding-left: 0
-        padding-right: 0
-        justify-content: space-between 
+        justify-content: space-between
+        @media (max-width: 767.98px)
+            padding-top: 20px
         .navbar-brand
             padding-top: 0
             padding-bottom: 0
+            @media (max-width: 575.98px)
+                & img
+                    width: 70%
         .navbar-collapse
             flex-grow: 0
     .navbar-nav
@@ -27,8 +30,20 @@
         @media (max-width: 991.98px)
             position: fixed
             z-index: 500
-            box-shadow: 0 0 10px #cccccc
+            left: 0
+            top: -25px
+            width: 100%
             background-color: $mainColorBlack
+            padding-top: 11%
+            margin-top: 25px
+            padding-bottom: 25px
+            .nav-item
+                margin-bottom: 10px
+            .nav-link
+                border-radius: 0
+        @media (max-width: 575.98px)
+            padding-top: 16%
+
         .nav-link
             color: $mainColorWhite
             text-transform: uppercase
@@ -41,12 +56,20 @@
                 color: #010101
                 background-color: $mainColorYellow
 
+    .menu-exit
+        font-size: 40px
+        color: #ffffff
+        position: absolute
+        right: 2%
+        top: -2%
+        border: none
+        background-color: unset
+        display: none
         @media (max-width: 991.98px)
-            margin-top: 25px
-            .nav-item
-                margin-bottom: 10px
-            .nav-link
-                border-radius: 0
+            display: flex
+        @media (max-width: 575.98px)
+            right: 4%
+
 
 .site-header
     &__caption
@@ -54,9 +77,13 @@
         text-align: center
         padding-top: 8.6%
         line-height: 1.3
+        padding-bottom: 60px
+        @media (max-width: 991.98px)
+            padding-bottom: 35px
+        @media (max-width: 767.98px)
+            padding-top: 3.6%
+            padding-bottom: 20px
 
-        @media (max-width: 479.98px)
-            padding-top: 55px
 
     &__title
         font-size: 72.26px
@@ -67,6 +94,8 @@
 
         @media (max-width: 767.98px)
             font-size: 31.26px
+        @media (max-width: 575.98px)
+            font-size: 26.26px
 
     &__subtitle
         font-size: 20px
@@ -79,15 +108,19 @@
             
         @media (max-width: 767.98px)
             font-size: 12px
-            letter-spacing: 8px  
+            letter-spacing: 8px
+        @media (max-width: 575.98px)
+            font-size: 9px
+
+
     &__image-wrap
-        position: relative
-        padding-bottom: 35%
+        text-align: center
+
     &__image
-        position: absolute
-        top: 15%
-        left: 12%
-        width: 70%
+        width: 80%
+        margin-bottom: -13%
+
+
 
 /* === header == */
 
@@ -99,25 +132,48 @@
     padding-top: 150px
     padding-bottom: 80px
     background-color: $mainColorYellow
+    @media (max-width: 767.98px)
+        padding-top: 85px
+        padding-bottom: 50px
+    @media (max-width: 575.98px)
+        padding-top: 55px
+        padding-bottom: 35px
+
 
 .about-caption
     max-width: 585px
+    @media (max-width: 575.98px)
+        max-width: 100%
     &__subtitle
         color: $fontBlack
         font-size: 35px
         font-family: $Lato-Black, sans-serif
         text-transform: uppercase
+        @media (max-width: 767.98px)
+            font-size: 28px
+        @media (max-width: 575.98px)
+            font-size: 23px
     &__title
         color: $fontBlack
         font-size: 50px
         font-family: $Lato-Black, sans-serif
         text-transform: uppercase
         margin-bottom: 34px
+        @media (max-width: 767.98px)
+            font-size: 35px
+            margin-bottom: 15px
+        @media (max-width: 575.98px)
+            font-size: 28px
+            margin-bottom: 10px
     &__text
         font-size: 18px
         font-family: $Lato-Regular, sans-serif
         color: $fontBlack
         margin-bottom: 56px
+        @media (max-width: 767.98px)
+            margin-bottom: 25px
+        @media (max-width: 575.98px)
+            margin-bottom: 20px
     &__button
         color: $mainColorWhite
         font-size: 29.53px
@@ -128,6 +184,8 @@
         border-radius: 10px
         &:hover
             color: $mainColorWhite
+        @media (max-width: 575.98px)
+            font-size: 25.53px
 
 .submit-block
     &__wrap
@@ -135,9 +193,13 @@
         @media (max-width: 767.98px)
             margin-top: 30px
             float: none
+        @media (max-width: 575.98px)
+            margin-top: 20px
     &__form
         max-width: 422px
         box-shadow: 0 0 15px #a1a1a1
+        @media (max-width: 767.98px)
+            max-width: 100%
     &__header
         color: $mainColorWhite
         width: 100%
@@ -146,6 +208,9 @@
         font-size: 34.43px
         font-family: $Lato-Black, sans-serif
         text-transform: uppercase
+        @media (max-width: 575.98px)
+            padding: 10px 30px 10px 30px
+            font-size: 29.43px
         & span
             color: $mainColorYellow
     &__inputs
@@ -155,6 +220,9 @@
         align-content: space-evenly
         background-color: $mainColorWhite
         padding: 35px 22px 18px 35px
+        @media (max-width: 575.98px)
+            padding: 25px 25px 18px 25px
+
         & input
             width: 47%
             border: none
@@ -176,6 +244,8 @@
         font-size: 20px
         font-family: $Lato-SemiBold, sans-serif
         margin-bottom: 43px
+        @media (max-width: 575.98px)
+            margin-bottom: 25px
     &__button
         width: 100%
         color: $mainColorWhite
@@ -188,6 +258,8 @@
         padding-bottom: 1px
         &:hover
             color: $mainColorWhite
+        @media (max-width: 575.98px)
+            font-size: 26.53px
 /* === contacts-section === */
 
 
@@ -211,7 +283,13 @@
         &__title
             font-size: 30px
         &__subtitle
-            font-size: 35.94px
+            font-size: 35.94px //30.94
+    @media (max-width: 767.98px)
+        &__title
+            font-size: 28px
+        &__subtitle
+            font-size: 30.94px
+
 /* === site caption === */
 
 
@@ -219,30 +297,39 @@
 .order-section
     padding-top: 60px
     padding-bottom: 77px
+    @media (max-width: 767.98px)
+        padding-top: 30px
+        padding-bottom: 35px
 
-.order-card
-    max-width: 373px
-    padding: 25px 34px
+.order-card-wrap
+    max-width: 100%
     background-color: #f5f4f2
     text-align: center
+    margin-top: 32%
+    &.active
+        background-color: $mainColorYellow
+        & .order-card__price
+            color: $fontBlack
+        & .order-card__button
+            color: $mainColorWhite
+            background-color: $mainColorBlack
+        & .order-card__top-price
+            display: block
+
+.order-card
+    padding: 0 34px 25px 34px
     position: relative
-    padding-top: 30%
-    margin: 134px auto 0
-
+    overflow: hidden
     &__image
-        position: absolute
-        top: -20%
-        left: 7%
         width: 90%
-
-        @media (max-width: 1199.98px)
-            top: -80px
+        margin-top: -26%
 
     &__title
         color: $fontBlack
         font-size: 30.42px
         font-family: $Lato-Black, sans-serif
         text-transform: uppercase
+        margin-top: 15px
         margin-bottom: 18px
     &__text
         color: $fontBlack
@@ -270,15 +357,19 @@
         bottom: 0
         display: none
         /* star selector ====== */
-    &.top-price
-        background-color: $mainColorYellow
-        & .order-card__price
-            color: $fontBlack
-        & .order-card__button
-            color: $mainColorWhite
-            background-color: $mainColorBlack
-        & .order-card__top-star
-            display: block
+    &__top-price
+        position: absolute
+        width: 100px
+        height: 100px
+        background-color: $mainColorBlack
+        transform: rotate(-45deg)
+        right: -50px
+        bottom: -50px
+        display: none
+        & img
+            transform: rotate(45deg)
+            vertical-align: -15px
+
 /* Order section  */
 
 
@@ -290,20 +381,32 @@
     background-image: url(../images/about-section-bg-img.png)
     background-position: center
     background-size: cover
+    @media (max-width: 767.98px)
+        padding-top: 30px
+        padding-bottom: 30px
     & .site-caption
         &__subtitle
             color: $mainColorWhite
 
 .about-block__wrap
     padding-top: 100px
+    @media (max-width: 767.98px)
+        padding-top: 30px
 
 .about-block
     display: flex
     justify-content: left
     margin-bottom: 80px
+    @media (max-width: 767.98px)
+        margin-bottom: 40px
+    &__img
+        & img
+            width: 100%
     &__info
-        width: 371px
+        width: 100%
         margin-left: 34px
+        @media (max-width: 767.98px)
+            margin-left: 25px
     &__title
         font-size: 25px
         font-family: $Lato-Black, sans-serif
@@ -311,10 +414,15 @@
         color: $mainColorYellow
         line-height: 1
         margin-bottom: 18px
+        @media (max-width: 767.98px)
+            font-size: 22px
+            margin-bottom: 5px
     &__text
         color: $mainColorWhite
         font-size: 18px
         font-family: $Lato-Regular, sans-serif
+        @media (max-width: 767.98px)
+            font-size: 16px
 
 .button-wrap
     text-align: center
@@ -323,6 +431,8 @@
 /* features-section */
 .features-section
     padding-top: 62px
+    @media (max-width: 767.98px)
+        padding-top: 30px
 
 .service-block
     &__left
@@ -330,11 +440,17 @@
         max-width: 468px
         @media (max-width: 991.98px)
             margin: 0 auto
+        @media (max-width: 767.98px)
+            padding-top: 25px
+            max-width: 100%
     &__title
         color: $fontBlack
         font-size: 25.48px
         font-family: $Lato-Black, sans-serif
         margin-bottom: 21px
+        @media (max-width: 767.98px)
+            font-size: 23.48px
+            margin-bottom: 15px
     &__text
         color: $fontBlack
         font-size: 18px
@@ -345,8 +461,14 @@
         flex-wrap: wrap
         & img
             margin-top: 44px
+            @media (max-width: 767.98px)
+                margin-top: 15px
+
+
     &__right
         padding-top: 40px
+        @media (max-width: 767.98px)
+            padding-top: 25px
         & img
             max-width: 100%
         @media (max-width: 991.98px)
@@ -363,17 +485,25 @@
     padding-top: 110px
     padding-bottom: 58px
     position: relative
+    @media (max-width: 767.98px)
+        padding-top: 30px
+        padding-bottom: 40px
     & .site-caption
         &__subtitle
             color: $mainColorWhite
 
 .speech-block_margin-top
     margin-top: 100px
+    @media (max-width: 767.98px)
+        margin-top: 30px
 
 .speech-block
     padding: 41px 63px 32px 46px
     background-color: $mainColorBlack
     border-radius: 50px
+    @media (max-width: 767.98px)
+        padding: 25px
+        border-radius: 25px
     &__text
         color: $mainColorWhite
         font-size: 18px
@@ -385,6 +515,8 @@
     &__info
         margin-top: 12px
         margin-left: 18px
+        @media (max-width: 767.98px)
+            margin-left: 14px
         & h1
             color: $mainColorYellow
             font-size: 25px
@@ -409,6 +541,9 @@
     padding-top: 70px
     padding-bottom: 70px
     background-color: $mainColorYellow
+    @media (max-width: 767.98px)
+        padding-top: 30px
+        padding-bottom: 30px
 
 .contact-block
     text-align: center
@@ -416,8 +551,13 @@
     font-size: 35px
     font-family: $Lato-Black, sans-serif
     text-transform: uppercase
+    @media (max-width: 767.98px)
+        font-size: 26px
+        line-height: 1.3
     &__number
         font-size: 76.66px
+        @media (max-width: 767.98px)
+            font-size: 37.66px
 /* contact-section */
 
 /* footer-section */
@@ -429,6 +569,8 @@
 
 .cub-item
     margin-top: 80px
+    @media (max-width: 767.98px)
+        margin-top: 30px
     &__title
         color: $mainColorWhite
         font-size: 25px
@@ -437,16 +579,24 @@
         border-bottom: 8px solid #{$mainColorYellow}
         padding-bottom: 30px
         margin-bottom: 42px
+        @media (max-width: 767.98px)
+            padding-bottom: 15px
+            margin-bottom: 15px
     &__text
         color: $mainColorWhite
         font-size: 18px
         font-family: $Lato-Regular, sans-serif
+        @media (max-width: 767.98px)
+            font-size: 16px
     &__social
         padding-top: 35px
         padding-left: 0
         list-style: none
         display: flex
         justify-content: left
+        @media (max-width: 767.98px)
+            padding-top: 15px
+            margin-bottom: 0
         & li
             margin-left: 20px
             &:first-child
@@ -458,6 +608,8 @@
         justify-content: space-between
         width: 185px
         margin-top: 30px
+        @media (max-width: 767.98px)
+            margin-top: 15px
         &:last-child
             margin-top: 10px
         & h1
@@ -473,8 +625,12 @@
         color: $mainColorWhite
         font-size: 18px
         font-family: ''Times New Roman', Times, serif'
+        @media (max-width: 767.98px)
+            font-size: 16px
         & li
             margin-bottom: 30px
+            @media (max-width: 767.98px)
+                margin-bottom: 15px
             & span
                 text-align: center
             & img
@@ -488,55 +644,41 @@
     text-align: center
     color: $mainColorWhite
     background-color: $mainColorBlack
+    @media (max-width: 767.98px)
+        margin-top: 0
+        padding-top: 5px
+        padding-bottom: 5px
 /* copytight */
 /* footer-section */
 
 .to-top
+    width: 45px
+    height: 45px
     position: fixed
-    bottom: 33%
-    right: 30px
+    bottom: 10px
+    right: 10px
     color: $mainColorWhite
     cursor: pointer
     text-align: center
     text-decoration: none
     border-radius: 50%
-    background-color: $mainColorYellow
+    background-color: green
     box-shadow: 0 0 15px $mainColorWhite
     text-transform: uppercase
-    & h1
-        font-size: 80px
-        line-height: 0.3
-    & h2
-        font-size: 20px
+    font-size: 50px
+    line-height: 0.7
+    color: $mainColorWhite
+    border: 1px solid $transparents
     &:hover
         color: $mainColorWhite
         text-decoration: none
-        box-shadow: 0 0 18px #{$mainColorYellow}
+        box-shadow: 0 0 10px #cccccc
+        background-color: $mainColorWhite
+        color: green
+        border-color: green
     &.show
         display: block
+        @media (max-width: 991.98px)
+            display: none
     &.hide
         display: none
-
-
-
-
-
-
-
-
-
-
-
-
-
-// // Extra small devices (portrait phones, less than 576px)
-// @media (max-width: 575.98px)
-
-// // Small devices (landscape phones, less than 768px)
-// @media (max-width: 767.98px)
-
-// // Medium devices (tablets, less than 992px)
-// @media (max-width: 991.98px)
-
-// // Large devices (desktops, less than 1200px)
-// @media (max-width: 1199.98px)

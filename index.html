@@ -25,54 +25,48 @@
 <body>
 
     <header class="header-section" id="home">
-
-        <div class="container">
-
-            <nav class="menu-wrap">
-                <nav class="navbar navbar-expand-lg">
-                    <a class="navbar-brand" href="#"><img src="images/navbar-logo.png" alt="nav-logo"></a>
-                    <button class="navbar-toggler navbar-dark" type="button" data-toggle="collapse"
-                        data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="navbar-nav mr-auto">
-                            <li class="nav-item active">
-                                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#about">About</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#Features">Features</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#Blog">Blog</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#Order">Order now</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#Contacts">Contacts</a>
-                            </li>
-
-                        </ul>
-                    </div>
-                </nav>
+        <nav class="menu-wrap">
+            <nav class="navbar navbar-expand-lg">
+                <a class="navbar-brand" href="#"><img src="images/navbar-logo.png" alt="nav-logo"></a>
+                <button class="navbar-toggler navbar-dark" type="button" data-toggle="collapse"
+                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto">
+                        <button class="menu-exit">x</button>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#about">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#Features">Features</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#Blog">Blog</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#Order">Order now</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#Contacts">Contacts</a>
+                        </li>
+                    </ul>
+                </div>
             </nav>
-
-
+        </nav>
+        <div class="container">
             <div class="site-header">
-                <div class="site-header__caption animate__animated animate__fadeIn">
+                <div class="site-header__caption">
                     <div class="site-header__title">+123 4567 8900</div>
                     <div class="site-header__subtitle">www.psd.in.ua</div>
                 </div>
 
                 <div class="site-header__image-wrap">
-                    <img class="site-header__image animate__animated animate__fadeInLeft"
-                        src="images/site-header-image.png" alt="header-image">
+                    <img class="site-header__image" src="images/site-header-image.png" alt="header-image">
                 </div>
             </div>
         </div>
@@ -82,7 +76,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-6">
-                    <div class="about-caption animate__animated wow animate__fadeIn" data-wow-offset="100">
+                    <div class="about-caption">
                         <div class="about-caption__subtitle">BEst In City</div>
                         <h1 class="about-caption__title">Trusted Cab Servies
                             in New York</h1>
@@ -95,8 +89,7 @@
                     </div>
                 </div>
                 <div class="col-md-6">
-                    <div class="submit-block__wrap animate__animated wow animate__tada" data-wow-delay="0.5s"
-                        data-wow-offset="100">
+                    <div class="submit-block__wrap">
                         <form class="submit-block__form" action="#" method="GET">
                             <div class="submit-block__header">book a <span>cab</span></div>
                             <div class="submit-block__inputs">
@@ -132,41 +125,41 @@
             </div>
             <div class="row">
                 <div class="col-md-6 col-lg-4">
-                    <div class="order-card">
+                    <div class="order-card-wrap">
                         <img class="order-card__image" src="images/order-card-img.png" alt="order-card-img">
-                        <h1 class="order-card__title">Economy Class</h1>
-                        <p class="order-card__text">Quisque sollicitudin feugiat risus, eu posuere ex euismod eu.
-                            Phasellus hendrerit, massa efficitur.</p>
-                        <div class="order-card__price">$1,5/mi</div>
-                        <button class="btn order-card__button button_press">Read More</button>
-                        <div class="order-card__top-star">
-                            <img src="images/price-star.png" alt="star">
+                        <div class="order-card">
+                            <h1 class="order-card__title">Business Class</h1>
+                            <p class="order-card__text">Quisque sollicitudin feugiat risus, eu posuere ex euismod eu.
+                                Phasellus hendrerit, massa efficitur.</p>
+                            <div class="order-card__price">$1,5/mi</div>
+                            <button class="btn order-card__button button_press">Read More</button>
+                            <div class="order-card__top-price"><img src="images/price-star.png" alt=""></div>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-4">
-                    <div class="order-card top-price">
+                    <div class="order-card-wrap active">
                         <img class="order-card__image" src="images/order-card-img.png" alt="order-card-img">
-                        <h1 class="order-card__title">Standard Class</h1>
-                        <p class="order-card__text">Quisque sollicitudin feugiat risus, eu posuere ex euismod eu.
-                            Phasellus hendrerit, massa efficitur.</p>
-                        <div class="order-card__price">$1,5/mi</div>
-                        <button class="btn order-card__button button_press">Read More</button>
-                        <div class="order-card__top-star">
-                            <img src="images/price-star.png" alt="star">
+                        <div class="order-card">
+                            <h1 class="order-card__title">Business Class</h1>
+                            <p class="order-card__text">Quisque sollicitudin feugiat risus, eu posuere ex euismod eu.
+                                Phasellus hendrerit, massa efficitur.</p>
+                            <div class="order-card__price">$1,5/mi</div>
+                            <button class="btn order-card__button button_press">Read More</button>
+                            <div class="order-card__top-price"><img src="images/price-star.png" alt=""></div>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-4">
-                    <div class="order-card">
+                    <div class="order-card-wrap">
                         <img class="order-card__image" src="images/order-card-img.png" alt="order-card-img">
-                        <h1 class="order-card__title">Business Class</h1>
-                        <p class="order-card__text">Quisque sollicitudin feugiat risus, eu posuere ex euismod eu.
-                            Phasellus hendrerit, massa efficitur.</p>
-                        <div class="order-card__price">$1,5/mi</div>
-                        <button class="btn order-card__button button_press">Read More</button>
-                        <div class="order-card__top-star">
-                            <img src="images/price-star.png" alt="star">
+                        <div class="order-card">
+                            <h1 class="order-card__title">Business Class</h1>
+                            <p class="order-card__text">Quisque sollicitudin feugiat risus, eu posuere ex euismod eu.
+                                Phasellus hendrerit, massa efficitur.</p>
+                            <div class="order-card__price">$1,5/mi</div>
+                            <button class="btn order-card__button button_press">Read More</button>
+                            <div class="order-card__top-price"><img src="images/price-star.png" alt=""></div>
                         </div>
                     </div>
                 </div>
@@ -354,13 +347,13 @@
                     <div class="cub-item">
                         <div class="cub-item__title">About cab Hub</div>
                         <ul class="cub-item__contacts">
-                            <li><img src="../images/location-icon.png" alt="location-icon"> <span>+123, Main Street,
+                            <li><img src="/images/location-icon.png" alt="location-icon"> <span>+123, Main Street,
                                     Your
                                     City,
                                     New York, USA 789456</span></li>
-                            <li><img src="../images/phone-icon.png" alt="phone-icon"> +123 4567 8900</li>
-                            <li><img src="../images/message-icon.png" alt="message-icon">free@psd.in.ua </li>
-                            <li><img src="../images/point-icon.png" alt="point-icon"> www.psd.in.ua</li>
+                            <li><img src="/images/phone-icon.png" alt="phone-icon"> +123 4567 8900</li>
+                            <li><img src="/images/message-icon.png" alt="message-icon">free@psd.in.ua </li>
+                            <li><img src="/images/point-icon.png" alt="point-icon"> www.psd.in.ua</li>
                         </ul>
                     </div>
                 </div>
@@ -369,9 +362,8 @@
         <div class="copytight">Copyright © 2015 psd.in.ua</div>
     </footer>
 
-    <a class="to-top hide button_press animate__animated wow animate__fadeIn" data-wow-offset="100" href="#home">
-        <h1>&triangle;</h1>
-        <h2>Top</h2>
+    <a class="to-top hide button_press" href="#home">
+        &triangle;
     </a>
 
 
